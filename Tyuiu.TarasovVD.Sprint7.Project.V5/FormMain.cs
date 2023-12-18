@@ -16,5 +16,11 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormInstrument formIns = new FormInstrument();
+            formIns.ShowDialog();
+        }
     }
 }

@@ -23,25 +23,29 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
         static string openFilePath;
         DataService ds = new DataService();
 
-        public static int[,] LoadFromFileData(string filePath)
+        public static string[,] LoadFromFileData(string filePath)
         {
             string fileData = File.ReadAllText(filePath);
             fileData = fileData.Replace('\n', '\r');
             string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
             rows = lines.Length;
             colums = lines[0].Split(';').Length;
-            int[,] arrayValues = new int[rows, colums];
+
+            string[,] arrayValues = new string[rows, colums];
+
             for (int r = 0; r < rows; r++)
             {
                 string[] line_r = lines[r].Split(';');
                 for (int c = 0; c < colums; c++)
                 {
-                    arrayValues[r, c] = Convert.ToInt32(line_r[c]);
+                    arrayValues[r, c] = line_r[c];
                 }
             }
+
             return arrayValues;
         }
-        
+
+
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,7 +53,7 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             
             openFileDialogTask_TVD.ShowDialog();
             openFilePath = openFileDialogTask_TVD.FileName;
-            int[,] arrayValues = new int[rows, colums];
+            string[,] arrayValues = new string[rows, colums];
             arrayValues = LoadFromFileData(openFilePath);
             dataGridViewInPutData_TVD.ColumnCount = colums;
             dataGridViewInPutData_TVD.RowCount = rows;
@@ -66,13 +70,18 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
                     dataGridViewInPutData_TVD.Rows[r].Cells[c].Value = arrayValues[r, c];
                 }
             }
-            dataGridViewInPutData_TVD.Columns[0].HeaderText = "Код товара";
-            dataGridViewInPutData_TVD.Columns[1].HeaderText = "Название товара";
-            dataGridViewInPutData_TVD.Columns[2].HeaderText = "Количество на складе";
-            dataGridViewInPutData_TVD.Columns[3].HeaderText = "Стоимость единицы товара";
-            dataGridViewInPutData_TVD.Columns[4].HeaderText = "Примечания - описание товара";
+            button2.Enabled = true;
+            SetDataGridViewHeaders();
         }
+        private void SetDataGridViewHeaders()
+        {
+            string[] headers = { "Код товара", "Название товара", "Количество на складе", "Стоимость единицы товара", "Примечания - описание товара" };
 
+            for (int i = 0; i < headers.Length; i++)
+            {
+                dataGridViewInPutData_TVD.Columns[i].HeaderText = headers[i];
+            }
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             saveFileDialogMatrix_TVD.FileName = "OutPutFile.csv";

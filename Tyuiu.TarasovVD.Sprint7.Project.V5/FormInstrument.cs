@@ -70,7 +70,7 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
                     dataGridViewInPutData_TVD.Rows[r].Cells[c].Value = arrayValues[r, c];
                 }
             }
-            button2.Enabled = true;
+            buttonSaveFile_TVD.Enabled = true;
             SetDataGridViewHeaders();
         }
         private void SetDataGridViewHeaders()
@@ -114,6 +114,11 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
                 File.AppendAllText(path, str + Environment.NewLine);
                 str = "";
             }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -21,6 +21,7 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
         {
             FormInstrument formIns = new FormInstrument();
             formIns.ShowDialog();
+            
         }
     }
 }

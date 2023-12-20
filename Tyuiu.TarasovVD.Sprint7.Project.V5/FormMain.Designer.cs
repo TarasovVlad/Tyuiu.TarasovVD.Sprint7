@@ -30,9 +30,9 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
         private void InitializeComponent()
         {
             this.panelTop_TVD = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelLeft_TVD = new System.Windows.Forms.Panel();
             this.splitterFill_TVD = new System.Windows.Forms.Splitter();
             this.panelFill_TVD = new System.Windows.Forms.Panel();
@@ -50,14 +50,14 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             this.panelTop_TVD.Size = new System.Drawing.Size(800, 101);
             this.panelTop_TVD.TabIndex = 0;
             // 
-            // button1
+            // button3
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 31);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(610, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(178, 31);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -69,14 +69,14 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // button1
             // 
-            this.button3.Location = new System.Drawing.Point(610, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(178, 31);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(195, 31);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // panelLeft_TVD
             // 

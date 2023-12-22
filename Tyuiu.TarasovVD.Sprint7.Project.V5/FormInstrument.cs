@@ -120,5 +120,10 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
         {
             this.Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            dataGridViewInPutData_TVD.ReadOnly = false;
+        }
     }
 }

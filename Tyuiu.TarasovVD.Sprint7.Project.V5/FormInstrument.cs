@@ -70,7 +70,7 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
                     dataGridViewInPutData_TVD.Rows[r].Cells[c].Value = arrayValues[r, c];
                 }
             }
-            buttonSaveFile_TVD.Enabled = true;
+            
             SetDataGridViewHeaders();
         }
         private void SetDataGridViewHeaders()
@@ -124,6 +124,27 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
         private void button5_Click(object sender, EventArgs e)
         {
             dataGridViewInPutData_TVD.ReadOnly = false;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            DataGridViewTextBoxColumn newColumn = new DataGridViewTextBoxColumn();
+            newColumn.HeaderText = "Новый столбец";
+            dataGridViewInPutData_TVD.Columns.Add(newColumn);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewInPutData_TVD.SelectedCells.Count > 0)
+            {
+                int columnIndex = dataGridViewInPutData_TVD.SelectedCells[0].ColumnIndex;
+
+                dataGridViewInPutData_TVD.Columns.RemoveAt(columnIndex);
+            }
+            else
+            {
+                MessageBox.Show("Выберите столбец для удаления.");
+            }
         }
     }
 }

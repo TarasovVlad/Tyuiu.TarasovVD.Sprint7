@@ -29,91 +29,89 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelTop_TVD = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonHelp_TVD = new System.Windows.Forms.Button();
+            this.buttonInstrument_TVD = new System.Windows.Forms.Button();
             this.panelLeft_TVD = new System.Windows.Forms.Panel();
-            this.splitterFill_TVD = new System.Windows.Forms.Splitter();
-            this.panelFill_TVD = new System.Windows.Forms.Panel();
+            this.toolTipInfo_TVD = new System.Windows.Forms.ToolTip(this.components);
+            this.labelName_TVD = new System.Windows.Forms.Label();
             this.panelTop_TVD.SuspendLayout();
+            this.panelLeft_TVD.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTop_TVD
             // 
-            this.panelTop_TVD.Controls.Add(this.button3);
-            this.panelTop_TVD.Controls.Add(this.button2);
-            this.panelTop_TVD.Controls.Add(this.button1);
+            this.panelTop_TVD.Controls.Add(this.buttonHelp_TVD);
+            this.panelTop_TVD.Controls.Add(this.buttonInstrument_TVD);
             this.panelTop_TVD.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop_TVD.Location = new System.Drawing.Point(0, 0);
             this.panelTop_TVD.Name = "panelTop_TVD";
-            this.panelTop_TVD.Size = new System.Drawing.Size(800, 101);
+            this.panelTop_TVD.Size = new System.Drawing.Size(427, 69);
             this.panelTop_TVD.TabIndex = 0;
             // 
-            // button3
+            // buttonHelp_TVD
             // 
-            this.button3.Location = new System.Drawing.Point(610, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(178, 31);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonHelp_TVD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp_TVD.Image = global::Tyuiu.TarasovVD.Sprint7.Project.V5.Properties.Resources.help;
+            this.buttonHelp_TVD.Location = new System.Drawing.Point(362, 3);
+            this.buttonHelp_TVD.Name = "buttonHelp_TVD";
+            this.buttonHelp_TVD.Size = new System.Drawing.Size(62, 64);
+            this.buttonHelp_TVD.TabIndex = 2;
+            this.toolTipInfo_TVD.SetToolTip(this.buttonHelp_TVD, "О программе");
+            this.buttonHelp_TVD.UseVisualStyleBackColor = true;
+            this.buttonHelp_TVD.Click += new System.EventHandler(this.button3_Click);
+            this.buttonHelp_TVD.MouseEnter += new System.EventHandler(this.buttonHelp_TVD_MouseEnter);
             // 
-            // button2
+            // buttonInstrument_TVD
             // 
-            this.button2.Location = new System.Drawing.Point(213, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(195, 31);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 31);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonInstrument_TVD.Image = global::Tyuiu.TarasovVD.Sprint7.Project.V5.Properties.Resources.wrench_orange;
+            this.buttonInstrument_TVD.Location = new System.Drawing.Point(3, 3);
+            this.buttonInstrument_TVD.Name = "buttonInstrument_TVD";
+            this.buttonInstrument_TVD.Size = new System.Drawing.Size(65, 64);
+            this.buttonInstrument_TVD.TabIndex = 1;
+            this.toolTipInfo_TVD.SetToolTip(this.buttonInstrument_TVD, "Перейти на инструментальную панель.");
+            this.buttonInstrument_TVD.UseVisualStyleBackColor = true;
+            this.buttonInstrument_TVD.Click += new System.EventHandler(this.button2_Click);
+            this.buttonInstrument_TVD.MouseEnter += new System.EventHandler(this.buttonInstrument_TVD_MouseEnter);
             // 
             // panelLeft_TVD
             // 
-            this.panelLeft_TVD.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft_TVD.Location = new System.Drawing.Point(0, 101);
+            this.panelLeft_TVD.Controls.Add(this.labelName_TVD);
+            this.panelLeft_TVD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelLeft_TVD.Location = new System.Drawing.Point(0, 69);
             this.panelLeft_TVD.Name = "panelLeft_TVD";
-            this.panelLeft_TVD.Size = new System.Drawing.Size(280, 349);
+            this.panelLeft_TVD.Size = new System.Drawing.Size(427, 60);
             this.panelLeft_TVD.TabIndex = 1;
             // 
-            // splitterFill_TVD
+            // toolTipInfo_TVD
             // 
-            this.splitterFill_TVD.Location = new System.Drawing.Point(280, 101);
-            this.splitterFill_TVD.Name = "splitterFill_TVD";
-            this.splitterFill_TVD.Size = new System.Drawing.Size(3, 349);
-            this.splitterFill_TVD.TabIndex = 2;
-            this.splitterFill_TVD.TabStop = false;
+            this.toolTipInfo_TVD.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
-            // panelFill_TVD
+            // labelName_TVD
             // 
-            this.panelFill_TVD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFill_TVD.Location = new System.Drawing.Point(283, 101);
-            this.panelFill_TVD.Name = "panelFill_TVD";
-            this.panelFill_TVD.Size = new System.Drawing.Size(517, 349);
-            this.panelFill_TVD.TabIndex = 3;
+            this.labelName_TVD.AutoSize = true;
+            this.labelName_TVD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelName_TVD.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelName_TVD.Location = new System.Drawing.Point(0, 0);
+            this.labelName_TVD.Name = "labelName_TVD";
+            this.labelName_TVD.Size = new System.Drawing.Size(411, 55);
+            this.labelName_TVD.TabIndex = 0;
+            this.labelName_TVD.Text = "ОПТОВАЯ БАЗА";
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panelFill_TVD);
-            this.Controls.Add(this.splitterFill_TVD);
+            this.ClientSize = new System.Drawing.Size(427, 129);
             this.Controls.Add(this.panelLeft_TVD);
             this.Controls.Add(this.panelTop_TVD);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormMain";
-            this.Text = "Form1";
+            this.Text = "Главное меню";
             this.panelTop_TVD.ResumeLayout(false);
+            this.panelLeft_TVD.ResumeLayout(false);
+            this.panelLeft_TVD.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -121,12 +119,11 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
         #endregion
 
         private System.Windows.Forms.Panel panelTop_TVD;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonHelp_TVD;
+        private System.Windows.Forms.Button buttonInstrument_TVD;
         private System.Windows.Forms.Panel panelLeft_TVD;
-        private System.Windows.Forms.Splitter splitterFill_TVD;
-        private System.Windows.Forms.Panel panelFill_TVD;
+        private System.Windows.Forms.ToolTip toolTipInfo_TVD;
+        private System.Windows.Forms.Label labelName_TVD;
     }
 }
 

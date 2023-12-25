@@ -117,41 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bullet_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bullet_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="page_white_go" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\page_white_go.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1430245849_1535864298" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1430245849_1535864298.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wrench_orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wrench_orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="folder_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\folder_page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="application_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\application_edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="page_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\page_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrow_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1430245849_15358642981" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1430245849_15358642981.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="labelInfo_TVD.Text" xml:space="preserve">
+    <value>Загрузка данных из файла
+Нажмите кнопку "Открыть файл" для выбора CSV-файла с данными.
+Выберите необходимый файл в диалоговом окне и нажмите "Открыть".
+Сохранение данных в файл
+Внесите необходимые изменения в таблицу данных.
+Нажмите кнопку "Сохранить в файл".
+Укажите имя и расположение нового файла в диалоговом окне и нажмите "Сохранить".
+Добавление товара
+Заполните поля "Название товара", "Количество", "Стоимость" и "Примечания".
+Нажмите кнопку "Добавить" для внесения товара в базу данных.
+Удаление товара
+Введите название товара в поле "Удалить товар".
+Нажмите кнопку "Удалить" для удаления товара из базы данных.
+Работа с поставщиками
+В разделе "Поставщики" введите информацию о поставщике.
+Нажмите кнопку "Добавить" для добавления нового поставщика.
+Введите ФИО поставщика в поле "Удалить поставщика".
+Нажмите кнопку "Удалить" для удаления поставщика из базы данных.
+Поиск
+Введите ключевое слово в поле "Поиск".
+Нажмите кнопку "Поиск" для отображения только тех строк, которые содержат введенное слово.
+Редактирование
+Разблокируйте редактирование, нажав кнопку "Редактирование".
+Внесите необходимые изменения в ячейки таблицы.
+Заблокируйте редактирование, нажав кнопку "Редактирование" еще раз.
+Завершение работы
+Нажмите кнопку "Выход", чтобы закрыть приложение.
+</value>
   </data>
 </root>

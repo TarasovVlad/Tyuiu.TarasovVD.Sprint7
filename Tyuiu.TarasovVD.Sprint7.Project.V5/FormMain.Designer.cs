@@ -34,8 +34,8 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             this.buttonHelp_TVD = new System.Windows.Forms.Button();
             this.buttonInstrument_TVD = new System.Windows.Forms.Button();
             this.panelLeft_TVD = new System.Windows.Forms.Panel();
-            this.toolTipInfo_TVD = new System.Windows.Forms.ToolTip(this.components);
             this.labelName_TVD = new System.Windows.Forms.Label();
+            this.toolTipInfo_TVD = new System.Windows.Forms.ToolTip(this.components);
             this.panelTop_TVD.SuspendLayout();
             this.panelLeft_TVD.SuspendLayout();
             this.SuspendLayout();
@@ -84,10 +84,6 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             this.panelLeft_TVD.Size = new System.Drawing.Size(427, 60);
             this.panelLeft_TVD.TabIndex = 1;
             // 
-            // toolTipInfo_TVD
-            // 
-            this.toolTipInfo_TVD.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            // 
             // labelName_TVD
             // 
             this.labelName_TVD.AutoSize = true;
@@ -98,6 +94,10 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             this.labelName_TVD.Size = new System.Drawing.Size(411, 55);
             this.labelName_TVD.TabIndex = 0;
             this.labelName_TVD.Text = "ОПТОВАЯ БАЗА";
+            // 
+            // toolTipInfo_TVD
+            // 
+            this.toolTipInfo_TVD.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
             // FormMain
             // 

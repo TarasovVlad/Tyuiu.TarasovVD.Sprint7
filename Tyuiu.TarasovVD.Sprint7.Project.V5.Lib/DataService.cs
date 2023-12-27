@@ -14,28 +14,22 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5.Lib
 
         public string[,] GetMatrix(string path)
         {
-            string[] str = File.ReadAllLines(path);
-            int columns = str.Any() ? str.Max(line => line.Split(';').Length) : 0;
-            int rows = str.Length;
-
-            string[,] matrix = new string[rows, columns];
-
+            string fileData = File.ReadAllText(path);
+            fileData = fileData.Replace('\n', '\r');
+            string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            int rows = lines.Length;
+            int cols = lines[0].Split(';').Length;
+            string[,] mtrx = new string[rows, cols];
+            string[] line;
             for (int i = 0; i < rows; i++)
             {
-                string[] strArr = str[i].Split(';');
-                for (int c = 0; c < columns; c++)
+                line = lines[i].Split(';');
+                for (int j = 0; j < cols; j++)
                 {
-                    if (c < strArr.Length)
-                    {
-                        matrix[i, c] = strArr[c];
-                    }
-                    else
-                    {
-                        matrix[i, c] = "Отсутствует";
-                    }
+                    mtrx[i, j] = line[j];
                 }
             }
-            return matrix;
+            return mtrx;
         }
 
 
@@ -71,16 +65,30 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5.Lib
                 return false;
             }
         }
-        public bool ProductExist(string[,] DataTable, string Product)
+        public string[,] SortNumber(string[,] array)
         {
-            bool b = false;
-            for (int i = 1; i < DataTable.GetLength(0); i++)
+            int rows = array.GetUpperBound(0) + 1;
+
+            // Создаем массив индексов от 0 до rows - 1
+            int[] indices = Enumerable.Range(0, rows).ToArray();
+
+            // Сортируем индексы по значениям в первом столбце (по номеру)
+            Array.Sort(indices, (i, j) => string.Compare(array[i, 0], array[j, 0]));
+
+            // Создаем новый массив для результата
+            string[,] res = new string[rows, 8];
+
+            // Копируем строки из исходного массива в новый в порядке отсортированных индексов
+            for (int i = 0; i < rows; i++)
             {
-                if (Product == DataTable[i, 1])
-                    b = true;
+                for (int j = 0; j < 8; j++)
+                {
+                    res[i, j] = array[indices[i], j];
+                }
             }
-            return b;
+
+            return res;
         }
-        
+
     }
 }

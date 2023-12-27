@@ -30,19 +30,33 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBoxSearch_TVD = new System.Windows.Forms.TextBox();
             this.buttonReturn_TVD = new System.Windows.Forms.Button();
             this.buttonEditHeaders_TVD = new System.Windows.Forms.Button();
             this.buttonHelp_TVD = new System.Windows.Forms.Button();
             this.buttonSaveFile_TVD = new System.Windows.Forms.Button();
             this.buttonOpenFile_TVD = new System.Windows.Forms.Button();
+            this.buttonStats_TVD = new System.Windows.Forms.Button();
+            this.labelSearch_TVD = new System.Windows.Forms.Label();
+            this.textBoxSearch_TVD = new System.Windows.Forms.TextBox();
             this.panelLeft_TVD = new System.Windows.Forms.Panel();
-            this.dataGridViewInPutData_TVD = new System.Windows.Forms.DataGridView();
+            this.groupBoxStats_TVD = new System.Windows.Forms.GroupBox();
+            this.textBoxSort_TVD = new System.Windows.Forms.TextBox();
+            this.buttonSortNumberProduct_TVD = new System.Windows.Forms.Button();
             this.groupBoxDelete_TVD = new System.Windows.Forms.GroupBox();
             this.labelDeleteProduct_TVD = new System.Windows.Forms.Label();
             this.textBoxDeleteProduct_TVD = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonDelete_TVD = new System.Windows.Forms.Button();
+            this.groupBoxInfoMan_TVD = new System.Windows.Forms.GroupBox();
+            this.labelNumber_TVD = new System.Windows.Forms.Label();
+            this.textBoxNumber_TVD = new System.Windows.Forms.TextBox();
+            this.labelDataProduct_TVD = new System.Windows.Forms.Label();
+            this.labelFIO_TVD = new System.Windows.Forms.Label();
+            this.textBoxDataProduct_TVD = new System.Windows.Forms.TextBox();
+            this.textBoxFIO_TVD = new System.Windows.Forms.TextBox();
             this.groupBoxAdd_TVD = new System.Windows.Forms.GroupBox();
             this.labelInfo_TVD = new System.Windows.Forms.Label();
             this.labelCost_TVD = new System.Windows.Forms.Label();
@@ -53,45 +67,37 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             this.textBoxInfo_TVD = new System.Windows.Forms.TextBox();
             this.textBoxCost_TVD = new System.Windows.Forms.TextBox();
             this.textBoxName_TVD = new System.Windows.Forms.TextBox();
-            this.dataGridViewInfoMan_TVD = new System.Windows.Forms.DataGridView();
+            this.dataGridViewInPutData_TVD = new System.Windows.Forms.DataGridView();
             this.openFileDialogTask_TVD = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogMatrix_TVD = new System.Windows.Forms.SaveFileDialog();
             this.toolTipInfo_TVD = new System.Windows.Forms.ToolTip(this.components);
-            this.buttonDeleteInfoMan_TVD = new System.Windows.Forms.Button();
-            this.buttonAddInfo_TVD = new System.Windows.Forms.Button();
             this.panelRight_TVD = new System.Windows.Forms.Panel();
-            this.groupBoxDeleteInfoMan_TVD = new System.Windows.Forms.GroupBox();
-            this.labelDeleteInfoMan_TVD = new System.Windows.Forms.Label();
-            this.textBoxDeleteInfoMan_TVD = new System.Windows.Forms.TextBox();
-            this.groupBoxInfoMan_TVD = new System.Windows.Forms.GroupBox();
-            this.labelCountProduct_TVD = new System.Windows.Forms.Label();
-            this.labelDataProduct_TVD = new System.Windows.Forms.Label();
-            this.labelFIO_TVD = new System.Windows.Forms.Label();
-            this.textBoxDataProduct_TVD = new System.Windows.Forms.TextBox();
-            this.textBoxCountProduct_TVD = new System.Windows.Forms.TextBox();
-            this.textBoxFIO_TVD = new System.Windows.Forms.TextBox();
-            this.labelSearch_TVD = new System.Windows.Forms.Label();
-            this.textBoxNameSearch_TVD = new System.Windows.Forms.TextBox();
-            this.labelNameSearch_TVD = new System.Windows.Forms.Label();
-            this.buttonStats_TVD = new System.Windows.Forms.Button();
+            this.textBoxCountP_TVD = new System.Windows.Forms.TextBox();
+            this.textBoxSum_TVD = new System.Windows.Forms.TextBox();
+            this.textBoxAverage_TVD = new System.Windows.Forms.TextBox();
+            this.textBoxMax_TVD = new System.Windows.Forms.TextBox();
+            this.textBoxmin_TVD = new System.Windows.Forms.TextBox();
+            this.buttonCalculateStats_TVD = new System.Windows.Forms.Button();
+            this.labelNumberColumns_TVD = new System.Windows.Forms.Label();
+            this.labelCountP_TVD = new System.Windows.Forms.Label();
+            this.labelSum_TVD = new System.Windows.Forms.Label();
+            this.labelaverage_TVD = new System.Windows.Forms.Label();
+            this.labelMin_TVD = new System.Windows.Forms.Label();
+            this.labelMax_TVD = new System.Windows.Forms.Label();
+            this.chartStats_TVD = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel1.SuspendLayout();
             this.panelLeft_TVD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInPutData_TVD)).BeginInit();
+            this.groupBoxStats_TVD.SuspendLayout();
             this.groupBoxDelete_TVD.SuspendLayout();
-            this.groupBoxAdd_TVD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInfoMan_TVD)).BeginInit();
-            this.panelRight_TVD.SuspendLayout();
-            this.groupBoxDeleteInfoMan_TVD.SuspendLayout();
             this.groupBoxInfoMan_TVD.SuspendLayout();
+            this.groupBoxAdd_TVD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInPutData_TVD)).BeginInit();
+            this.panelRight_TVD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartStats_TVD)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.buttonStats_TVD);
-            this.panel1.Controls.Add(this.labelNameSearch_TVD);
-            this.panel1.Controls.Add(this.textBoxNameSearch_TVD);
-            this.panel1.Controls.Add(this.labelSearch_TVD);
-            this.panel1.Controls.Add(this.textBoxSearch_TVD);
             this.panel1.Controls.Add(this.buttonReturn_TVD);
             this.panel1.Controls.Add(this.buttonEditHeaders_TVD);
             this.panel1.Controls.Add(this.buttonHelp_TVD);
@@ -102,14 +108,6 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1106, 86);
             this.panel1.TabIndex = 0;
-            // 
-            // textBoxSearch_TVD
-            // 
-            this.textBoxSearch_TVD.Location = new System.Drawing.Point(276, 48);
-            this.textBoxSearch_TVD.Name = "textBoxSearch_TVD";
-            this.textBoxSearch_TVD.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSearch_TVD.TabIndex = 7;
-            this.textBoxSearch_TVD.TextChanged += new System.EventHandler(this.textBoxSearch_TVD_TextChanged);
             // 
             // buttonReturn_TVD
             // 
@@ -172,34 +170,91 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             this.buttonOpenFile_TVD.Click += new System.EventHandler(this.button1_Click);
             this.buttonOpenFile_TVD.MouseEnter += new System.EventHandler(this.buttonOpenFile_TVD_MouseEnter);
             // 
+            // buttonStats_TVD
+            // 
+            this.buttonStats_TVD.Location = new System.Drawing.Point(503, 80);
+            this.buttonStats_TVD.Name = "buttonStats_TVD";
+            this.buttonStats_TVD.Size = new System.Drawing.Size(75, 23);
+            this.buttonStats_TVD.TabIndex = 11;
+            this.buttonStats_TVD.Text = "График";
+            this.buttonStats_TVD.UseVisualStyleBackColor = true;
+            this.buttonStats_TVD.Click += new System.EventHandler(this.buttonStats_TVD_Click);
+            // 
+            // labelSearch_TVD
+            // 
+            this.labelSearch_TVD.AutoSize = true;
+            this.labelSearch_TVD.Location = new System.Drawing.Point(536, 20);
+            this.labelSearch_TVD.Name = "labelSearch_TVD";
+            this.labelSearch_TVD.Size = new System.Drawing.Size(42, 13);
+            this.labelSearch_TVD.TabIndex = 8;
+            this.labelSearch_TVD.Text = "Поиск ";
+            // 
+            // textBoxSearch_TVD
+            // 
+            this.textBoxSearch_TVD.Location = new System.Drawing.Point(478, 35);
+            this.textBoxSearch_TVD.Name = "textBoxSearch_TVD";
+            this.textBoxSearch_TVD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSearch_TVD.TabIndex = 7;
+            this.textBoxSearch_TVD.TextChanged += new System.EventHandler(this.textBoxSearch_TVD_TextChanged);
+            // 
             // panelLeft_TVD
             // 
-            this.panelLeft_TVD.Controls.Add(this.dataGridViewInPutData_TVD);
+            this.panelLeft_TVD.Controls.Add(this.groupBoxStats_TVD);
             this.panelLeft_TVD.Controls.Add(this.groupBoxDelete_TVD);
+            this.panelLeft_TVD.Controls.Add(this.groupBoxInfoMan_TVD);
             this.panelLeft_TVD.Controls.Add(this.groupBoxAdd_TVD);
-            this.panelLeft_TVD.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft_TVD.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLeft_TVD.Location = new System.Drawing.Point(0, 86);
             this.panelLeft_TVD.Name = "panelLeft_TVD";
-            this.panelLeft_TVD.Size = new System.Drawing.Size(510, 484);
+            this.panelLeft_TVD.Size = new System.Drawing.Size(1106, 185);
             this.panelLeft_TVD.TabIndex = 1;
             // 
-            // dataGridViewInPutData_TVD
+            // groupBoxStats_TVD
             // 
-            this.dataGridViewInPutData_TVD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewInPutData_TVD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewInPutData_TVD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewInPutData_TVD.Location = new System.Drawing.Point(0, 184);
-            this.dataGridViewInPutData_TVD.Name = "dataGridViewInPutData_TVD";
-            this.dataGridViewInPutData_TVD.ReadOnly = true;
-            this.dataGridViewInPutData_TVD.Size = new System.Drawing.Size(510, 300);
-            this.dataGridViewInPutData_TVD.TabIndex = 0;
+            this.groupBoxStats_TVD.Controls.Add(this.labelMax_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.labelMin_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.labelaverage_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.labelSum_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.labelCountP_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.labelNumberColumns_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.buttonCalculateStats_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.textBoxmin_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.textBoxMax_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.textBoxAverage_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.textBoxSum_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.textBoxCountP_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.textBoxSort_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.buttonSortNumberProduct_TVD);
+            this.groupBoxStats_TVD.Controls.Add(this.buttonStats_TVD);
+            this.groupBoxStats_TVD.Location = new System.Drawing.Point(516, 70);
+            this.groupBoxStats_TVD.Name = "groupBoxStats_TVD";
+            this.groupBoxStats_TVD.Size = new System.Drawing.Size(587, 115);
+            this.groupBoxStats_TVD.TabIndex = 3;
+            this.groupBoxStats_TVD.TabStop = false;
+            this.groupBoxStats_TVD.Text = "Статистика";
+            // 
+            // textBoxSort_TVD
+            // 
+            this.textBoxSort_TVD.Location = new System.Drawing.Point(0, 59);
+            this.textBoxSort_TVD.Name = "textBoxSort_TVD";
+            this.textBoxSort_TVD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSort_TVD.TabIndex = 13;
+            // 
+            // buttonSortNumberProduct_TVD
+            // 
+            this.buttonSortNumberProduct_TVD.Location = new System.Drawing.Point(6, 17);
+            this.buttonSortNumberProduct_TVD.Name = "buttonSortNumberProduct_TVD";
+            this.buttonSortNumberProduct_TVD.Size = new System.Drawing.Size(75, 23);
+            this.buttonSortNumberProduct_TVD.TabIndex = 12;
+            this.buttonSortNumberProduct_TVD.Text = "Сортировка";
+            this.buttonSortNumberProduct_TVD.UseVisualStyleBackColor = true;
+            this.buttonSortNumberProduct_TVD.Click += new System.EventHandler(this.buttonSortNumberProduct_TVD_Click);
             // 
             // groupBoxDelete_TVD
             // 
             this.groupBoxDelete_TVD.Controls.Add(this.labelDeleteProduct_TVD);
             this.groupBoxDelete_TVD.Controls.Add(this.textBoxDeleteProduct_TVD);
-            this.groupBoxDelete_TVD.Controls.Add(this.button4);
-            this.groupBoxDelete_TVD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBoxDelete_TVD.Controls.Add(this.buttonDelete_TVD);
             this.groupBoxDelete_TVD.Location = new System.Drawing.Point(0, 115);
             this.groupBoxDelete_TVD.Name = "groupBoxDelete_TVD";
             this.groupBoxDelete_TVD.Size = new System.Drawing.Size(510, 69);
@@ -223,18 +278,83 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             this.textBoxDeleteProduct_TVD.Size = new System.Drawing.Size(100, 20);
             this.textBoxDeleteProduct_TVD.TabIndex = 4;
             // 
-            // button4
+            // buttonDelete_TVD
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Image = global::Tyuiu.TarasovVD.Sprint7.Project.V5.Properties.Resources.cross;
-            this.button4.Location = new System.Drawing.Point(113, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(50, 50);
-            this.button4.TabIndex = 3;
-            this.toolTipInfo_TVD.SetToolTip(this.button4, "Удаляет товар из базы.");
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            this.button4.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
+            this.buttonDelete_TVD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDelete_TVD.Image = global::Tyuiu.TarasovVD.Sprint7.Project.V5.Properties.Resources.cross;
+            this.buttonDelete_TVD.Location = new System.Drawing.Point(113, 14);
+            this.buttonDelete_TVD.Name = "buttonDelete_TVD";
+            this.buttonDelete_TVD.Size = new System.Drawing.Size(50, 50);
+            this.buttonDelete_TVD.TabIndex = 3;
+            this.toolTipInfo_TVD.SetToolTip(this.buttonDelete_TVD, "Удаляет товар из базы.");
+            this.buttonDelete_TVD.UseVisualStyleBackColor = true;
+            this.buttonDelete_TVD.Click += new System.EventHandler(this.button4_Click);
+            this.buttonDelete_TVD.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
+            // 
+            // groupBoxInfoMan_TVD
+            // 
+            this.groupBoxInfoMan_TVD.Controls.Add(this.labelNumber_TVD);
+            this.groupBoxInfoMan_TVD.Controls.Add(this.textBoxNumber_TVD);
+            this.groupBoxInfoMan_TVD.Controls.Add(this.labelSearch_TVD);
+            this.groupBoxInfoMan_TVD.Controls.Add(this.textBoxSearch_TVD);
+            this.groupBoxInfoMan_TVD.Controls.Add(this.labelDataProduct_TVD);
+            this.groupBoxInfoMan_TVD.Controls.Add(this.labelFIO_TVD);
+            this.groupBoxInfoMan_TVD.Controls.Add(this.textBoxDataProduct_TVD);
+            this.groupBoxInfoMan_TVD.Controls.Add(this.textBoxFIO_TVD);
+            this.groupBoxInfoMan_TVD.Location = new System.Drawing.Point(516, 0);
+            this.groupBoxInfoMan_TVD.Name = "groupBoxInfoMan_TVD";
+            this.groupBoxInfoMan_TVD.Size = new System.Drawing.Size(596, 64);
+            this.groupBoxInfoMan_TVD.TabIndex = 2;
+            this.groupBoxInfoMan_TVD.TabStop = false;
+            this.groupBoxInfoMan_TVD.Text = "Добавление поставщика";
+            // 
+            // labelNumber_TVD
+            // 
+            this.labelNumber_TVD.AutoSize = true;
+            this.labelNumber_TVD.Location = new System.Drawing.Point(217, 19);
+            this.labelNumber_TVD.Name = "labelNumber_TVD";
+            this.labelNumber_TVD.Size = new System.Drawing.Size(106, 13);
+            this.labelNumber_TVD.TabIndex = 6;
+            this.labelNumber_TVD.Text = "Номер поставщика";
+            // 
+            // textBoxNumber_TVD
+            // 
+            this.textBoxNumber_TVD.Location = new System.Drawing.Point(217, 35);
+            this.textBoxNumber_TVD.Name = "textBoxNumber_TVD";
+            this.textBoxNumber_TVD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumber_TVD.TabIndex = 5;
+            // 
+            // labelDataProduct_TVD
+            // 
+            this.labelDataProduct_TVD.AutoSize = true;
+            this.labelDataProduct_TVD.Location = new System.Drawing.Point(111, 20);
+            this.labelDataProduct_TVD.Name = "labelDataProduct_TVD";
+            this.labelDataProduct_TVD.Size = new System.Drawing.Size(82, 13);
+            this.labelDataProduct_TVD.TabIndex = 4;
+            this.labelDataProduct_TVD.Text = "Срок поставки";
+            // 
+            // labelFIO_TVD
+            // 
+            this.labelFIO_TVD.AutoSize = true;
+            this.labelFIO_TVD.Location = new System.Drawing.Point(6, 20);
+            this.labelFIO_TVD.Name = "labelFIO_TVD";
+            this.labelFIO_TVD.Size = new System.Drawing.Size(99, 13);
+            this.labelFIO_TVD.TabIndex = 3;
+            this.labelFIO_TVD.Text = "ФИО поставщика";
+            // 
+            // textBoxDataProduct_TVD
+            // 
+            this.textBoxDataProduct_TVD.Location = new System.Drawing.Point(110, 36);
+            this.textBoxDataProduct_TVD.Name = "textBoxDataProduct_TVD";
+            this.textBoxDataProduct_TVD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDataProduct_TVD.TabIndex = 2;
+            // 
+            // textBoxFIO_TVD
+            // 
+            this.textBoxFIO_TVD.Location = new System.Drawing.Point(4, 36);
+            this.textBoxFIO_TVD.Name = "textBoxFIO_TVD";
+            this.textBoxFIO_TVD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxFIO_TVD.TabIndex = 0;
             // 
             // groupBoxAdd_TVD
             // 
@@ -247,7 +367,6 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             this.groupBoxAdd_TVD.Controls.Add(this.textBoxInfo_TVD);
             this.groupBoxAdd_TVD.Controls.Add(this.textBoxCost_TVD);
             this.groupBoxAdd_TVD.Controls.Add(this.textBoxName_TVD);
-            this.groupBoxAdd_TVD.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBoxAdd_TVD.Location = new System.Drawing.Point(0, 0);
             this.groupBoxAdd_TVD.Name = "groupBoxAdd_TVD";
             this.groupBoxAdd_TVD.Size = new System.Drawing.Size(510, 115);
@@ -331,16 +450,16 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             this.textBoxName_TVD.Size = new System.Drawing.Size(100, 20);
             this.textBoxName_TVD.TabIndex = 0;
             // 
-            // dataGridViewInfoMan_TVD
+            // dataGridViewInPutData_TVD
             // 
-            this.dataGridViewInfoMan_TVD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewInfoMan_TVD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewInfoMan_TVD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewInfoMan_TVD.Location = new System.Drawing.Point(0, 184);
-            this.dataGridViewInfoMan_TVD.Name = "dataGridViewInfoMan_TVD";
-            this.dataGridViewInfoMan_TVD.ReadOnly = true;
-            this.dataGridViewInfoMan_TVD.Size = new System.Drawing.Size(596, 300);
-            this.dataGridViewInfoMan_TVD.TabIndex = 1;
+            this.dataGridViewInPutData_TVD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewInPutData_TVD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewInPutData_TVD.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dataGridViewInPutData_TVD.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewInPutData_TVD.Name = "dataGridViewInPutData_TVD";
+            this.dataGridViewInPutData_TVD.ReadOnly = true;
+            this.dataGridViewInPutData_TVD.Size = new System.Drawing.Size(511, 373);
+            this.dataGridViewInPutData_TVD.TabIndex = 0;
             // 
             // openFileDialogTask_TVD
             // 
@@ -350,195 +469,155 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
             // 
             this.toolTipInfo_TVD.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
-            // buttonDeleteInfoMan_TVD
-            // 
-            this.buttonDeleteInfoMan_TVD.Image = global::Tyuiu.TarasovVD.Sprint7.Project.V5.Properties.Resources.cross;
-            this.buttonDeleteInfoMan_TVD.Location = new System.Drawing.Point(127, 8);
-            this.buttonDeleteInfoMan_TVD.Name = "buttonDeleteInfoMan_TVD";
-            this.buttonDeleteInfoMan_TVD.Size = new System.Drawing.Size(50, 50);
-            this.buttonDeleteInfoMan_TVD.TabIndex = 4;
-            this.toolTipInfo_TVD.SetToolTip(this.buttonDeleteInfoMan_TVD, "Удаляет поставщика и его товар.");
-            this.buttonDeleteInfoMan_TVD.UseVisualStyleBackColor = true;
-            this.buttonDeleteInfoMan_TVD.Click += new System.EventHandler(this.buttonDeleteInfoMan_TVD_Click);
-            this.buttonDeleteInfoMan_TVD.MouseEnter += new System.EventHandler(this.buttonDeleteInfoMan_TVD_MouseEnter);
-            // 
-            // buttonAddInfo_TVD
-            // 
-            this.buttonAddInfo_TVD.Image = global::Tyuiu.TarasovVD.Sprint7.Project.V5.Properties.Resources.add;
-            this.buttonAddInfo_TVD.Location = new System.Drawing.Point(318, 9);
-            this.buttonAddInfo_TVD.Name = "buttonAddInfo_TVD";
-            this.buttonAddInfo_TVD.Size = new System.Drawing.Size(50, 50);
-            this.buttonAddInfo_TVD.TabIndex = 6;
-            this.toolTipInfo_TVD.SetToolTip(this.buttonAddInfo_TVD, "Добавляет поставщика и его товар.");
-            this.buttonAddInfo_TVD.UseVisualStyleBackColor = true;
-            this.buttonAddInfo_TVD.Click += new System.EventHandler(this.buttonAddInfo_TVD_Click);
-            this.buttonAddInfo_TVD.MouseEnter += new System.EventHandler(this.buttonAddInfo_TVD_MouseEnter);
-            // 
             // panelRight_TVD
             // 
-            this.panelRight_TVD.Controls.Add(this.dataGridViewInfoMan_TVD);
-            this.panelRight_TVD.Controls.Add(this.groupBoxDeleteInfoMan_TVD);
-            this.panelRight_TVD.Controls.Add(this.groupBoxInfoMan_TVD);
+            this.panelRight_TVD.Controls.Add(this.chartStats_TVD);
+            this.panelRight_TVD.Controls.Add(this.dataGridViewInPutData_TVD);
             this.panelRight_TVD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRight_TVD.Location = new System.Drawing.Point(510, 86);
+            this.panelRight_TVD.Location = new System.Drawing.Point(0, 271);
             this.panelRight_TVD.Name = "panelRight_TVD";
-            this.panelRight_TVD.Size = new System.Drawing.Size(596, 484);
+            this.panelRight_TVD.Size = new System.Drawing.Size(1106, 373);
             this.panelRight_TVD.TabIndex = 3;
             // 
-            // groupBoxDeleteInfoMan_TVD
+            // textBoxCountP_TVD
             // 
-            this.groupBoxDeleteInfoMan_TVD.Controls.Add(this.labelDeleteInfoMan_TVD);
-            this.groupBoxDeleteInfoMan_TVD.Controls.Add(this.textBoxDeleteInfoMan_TVD);
-            this.groupBoxDeleteInfoMan_TVD.Controls.Add(this.buttonDeleteInfoMan_TVD);
-            this.groupBoxDeleteInfoMan_TVD.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBoxDeleteInfoMan_TVD.Location = new System.Drawing.Point(0, 65);
-            this.groupBoxDeleteInfoMan_TVD.Name = "groupBoxDeleteInfoMan_TVD";
-            this.groupBoxDeleteInfoMan_TVD.Size = new System.Drawing.Size(596, 119);
-            this.groupBoxDeleteInfoMan_TVD.TabIndex = 3;
-            this.groupBoxDeleteInfoMan_TVD.TabStop = false;
-            this.groupBoxDeleteInfoMan_TVD.Text = "Удаление поставщика";
+            this.textBoxCountP_TVD.Location = new System.Drawing.Point(182, 20);
+            this.textBoxCountP_TVD.Name = "textBoxCountP_TVD";
+            this.textBoxCountP_TVD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCountP_TVD.TabIndex = 14;
             // 
-            // labelDeleteInfoMan_TVD
+            // textBoxSum_TVD
             // 
-            this.labelDeleteInfoMan_TVD.AutoSize = true;
-            this.labelDeleteInfoMan_TVD.Location = new System.Drawing.Point(9, 22);
-            this.labelDeleteInfoMan_TVD.Name = "labelDeleteInfoMan_TVD";
-            this.labelDeleteInfoMan_TVD.Size = new System.Drawing.Size(99, 13);
-            this.labelDeleteInfoMan_TVD.TabIndex = 6;
-            this.labelDeleteInfoMan_TVD.Text = "ФИО поставщика";
+            this.textBoxSum_TVD.Location = new System.Drawing.Point(288, 21);
+            this.textBoxSum_TVD.Name = "textBoxSum_TVD";
+            this.textBoxSum_TVD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSum_TVD.TabIndex = 15;
             // 
-            // textBoxDeleteInfoMan_TVD
+            // textBoxAverage_TVD
             // 
-            this.textBoxDeleteInfoMan_TVD.Location = new System.Drawing.Point(8, 38);
-            this.textBoxDeleteInfoMan_TVD.Name = "textBoxDeleteInfoMan_TVD";
-            this.textBoxDeleteInfoMan_TVD.Size = new System.Drawing.Size(100, 20);
-            this.textBoxDeleteInfoMan_TVD.TabIndex = 5;
+            this.textBoxAverage_TVD.Location = new System.Drawing.Point(397, 20);
+            this.textBoxAverage_TVD.Name = "textBoxAverage_TVD";
+            this.textBoxAverage_TVD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAverage_TVD.TabIndex = 16;
             // 
-            // groupBoxInfoMan_TVD
+            // textBoxMax_TVD
             // 
-            this.groupBoxInfoMan_TVD.Controls.Add(this.buttonAddInfo_TVD);
-            this.groupBoxInfoMan_TVD.Controls.Add(this.labelCountProduct_TVD);
-            this.groupBoxInfoMan_TVD.Controls.Add(this.labelDataProduct_TVD);
-            this.groupBoxInfoMan_TVD.Controls.Add(this.labelFIO_TVD);
-            this.groupBoxInfoMan_TVD.Controls.Add(this.textBoxDataProduct_TVD);
-            this.groupBoxInfoMan_TVD.Controls.Add(this.textBoxCountProduct_TVD);
-            this.groupBoxInfoMan_TVD.Controls.Add(this.textBoxFIO_TVD);
-            this.groupBoxInfoMan_TVD.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBoxInfoMan_TVD.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxInfoMan_TVD.Name = "groupBoxInfoMan_TVD";
-            this.groupBoxInfoMan_TVD.Size = new System.Drawing.Size(596, 65);
-            this.groupBoxInfoMan_TVD.TabIndex = 2;
-            this.groupBoxInfoMan_TVD.TabStop = false;
-            this.groupBoxInfoMan_TVD.Text = "Добавление информации товара";
+            this.textBoxMax_TVD.Location = new System.Drawing.Point(288, 59);
+            this.textBoxMax_TVD.Name = "textBoxMax_TVD";
+            this.textBoxMax_TVD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMax_TVD.TabIndex = 17;
             // 
-            // labelCountProduct_TVD
+            // textBoxmin_TVD
             // 
-            this.labelCountProduct_TVD.AutoSize = true;
-            this.labelCountProduct_TVD.Location = new System.Drawing.Point(209, 20);
-            this.labelCountProduct_TVD.Name = "labelCountProduct_TVD";
-            this.labelCountProduct_TVD.Size = new System.Drawing.Size(104, 13);
-            this.labelCountProduct_TVD.TabIndex = 5;
-            this.labelCountProduct_TVD.Text = "Количество товара";
+            this.textBoxmin_TVD.Location = new System.Drawing.Point(182, 59);
+            this.textBoxmin_TVD.Name = "textBoxmin_TVD";
+            this.textBoxmin_TVD.Size = new System.Drawing.Size(100, 20);
+            this.textBoxmin_TVD.TabIndex = 18;
             // 
-            // labelDataProduct_TVD
+            // buttonCalculateStats_TVD
             // 
-            this.labelDataProduct_TVD.AutoSize = true;
-            this.labelDataProduct_TVD.Location = new System.Drawing.Point(111, 20);
-            this.labelDataProduct_TVD.Name = "labelDataProduct_TVD";
-            this.labelDataProduct_TVD.Size = new System.Drawing.Size(82, 13);
-            this.labelDataProduct_TVD.TabIndex = 4;
-            this.labelDataProduct_TVD.Text = "Срок поставки";
+            this.buttonCalculateStats_TVD.Location = new System.Drawing.Point(503, 19);
+            this.buttonCalculateStats_TVD.Name = "buttonCalculateStats_TVD";
+            this.buttonCalculateStats_TVD.Size = new System.Drawing.Size(75, 23);
+            this.buttonCalculateStats_TVD.TabIndex = 19;
+            this.buttonCalculateStats_TVD.Text = "Статистика";
+            this.buttonCalculateStats_TVD.UseVisualStyleBackColor = true;
+            this.buttonCalculateStats_TVD.Click += new System.EventHandler(this.buttonCalculateStats_Click);
             // 
-            // labelFIO_TVD
+            // labelNumberColumns_TVD
             // 
-            this.labelFIO_TVD.AutoSize = true;
-            this.labelFIO_TVD.Location = new System.Drawing.Point(6, 20);
-            this.labelFIO_TVD.Name = "labelFIO_TVD";
-            this.labelFIO_TVD.Size = new System.Drawing.Size(99, 13);
-            this.labelFIO_TVD.TabIndex = 3;
-            this.labelFIO_TVD.Text = "ФИО поставщика";
+            this.labelNumberColumns_TVD.AutoSize = true;
+            this.labelNumberColumns_TVD.Location = new System.Drawing.Point(0, 45);
+            this.labelNumberColumns_TVD.Name = "labelNumberColumns_TVD";
+            this.labelNumberColumns_TVD.Size = new System.Drawing.Size(128, 13);
+            this.labelNumberColumns_TVD.TabIndex = 20;
+            this.labelNumberColumns_TVD.Text = "Введите номер столбца";
             // 
-            // textBoxDataProduct_TVD
+            // labelCountP_TVD
             // 
-            this.textBoxDataProduct_TVD.Location = new System.Drawing.Point(110, 36);
-            this.textBoxDataProduct_TVD.Name = "textBoxDataProduct_TVD";
-            this.textBoxDataProduct_TVD.Size = new System.Drawing.Size(100, 20);
-            this.textBoxDataProduct_TVD.TabIndex = 2;
+            this.labelCountP_TVD.AutoSize = true;
+            this.labelCountP_TVD.Location = new System.Drawing.Point(179, 8);
+            this.labelCountP_TVD.Name = "labelCountP_TVD";
+            this.labelCountP_TVD.Size = new System.Drawing.Size(66, 13);
+            this.labelCountP_TVD.TabIndex = 21;
+            this.labelCountP_TVD.Text = "Количество";
             // 
-            // textBoxCountProduct_TVD
+            // labelSum_TVD
             // 
-            this.textBoxCountProduct_TVD.Location = new System.Drawing.Point(212, 36);
-            this.textBoxCountProduct_TVD.Name = "textBoxCountProduct_TVD";
-            this.textBoxCountProduct_TVD.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCountProduct_TVD.TabIndex = 1;
+            this.labelSum_TVD.AutoSize = true;
+            this.labelSum_TVD.Location = new System.Drawing.Point(288, 8);
+            this.labelSum_TVD.Name = "labelSum_TVD";
+            this.labelSum_TVD.Size = new System.Drawing.Size(78, 13);
+            this.labelSum_TVD.TabIndex = 22;
+            this.labelSum_TVD.Text = "Общее кол-во";
             // 
-            // textBoxFIO_TVD
+            // labelaverage_TVD
             // 
-            this.textBoxFIO_TVD.Location = new System.Drawing.Point(4, 36);
-            this.textBoxFIO_TVD.Name = "textBoxFIO_TVD";
-            this.textBoxFIO_TVD.Size = new System.Drawing.Size(100, 20);
-            this.textBoxFIO_TVD.TabIndex = 0;
+            this.labelaverage_TVD.AutoSize = true;
+            this.labelaverage_TVD.Location = new System.Drawing.Point(394, 9);
+            this.labelaverage_TVD.Name = "labelaverage_TVD";
+            this.labelaverage_TVD.Size = new System.Drawing.Size(86, 13);
+            this.labelaverage_TVD.TabIndex = 23;
+            this.labelaverage_TVD.Text = "Среднее кол-во";
             // 
-            // labelSearch_TVD
+            // labelMin_TVD
             // 
-            this.labelSearch_TVD.AutoSize = true;
-            this.labelSearch_TVD.Location = new System.Drawing.Point(276, 32);
-            this.labelSearch_TVD.Name = "labelSearch_TVD";
-            this.labelSearch_TVD.Size = new System.Drawing.Size(131, 13);
-            this.labelSearch_TVD.TabIndex = 8;
-            this.labelSearch_TVD.Text = "Поиск товара на складе";
+            this.labelMin_TVD.AutoSize = true;
+            this.labelMin_TVD.Location = new System.Drawing.Point(179, 45);
+            this.labelMin_TVD.Name = "labelMin_TVD";
+            this.labelMin_TVD.Size = new System.Drawing.Size(64, 13);
+            this.labelMin_TVD.TabIndex = 24;
+            this.labelMin_TVD.Text = "Мин кол-во";
             // 
-            // textBoxNameSearch_TVD
+            // labelMax_TVD
             // 
-            this.textBoxNameSearch_TVD.Location = new System.Drawing.Point(410, 48);
-            this.textBoxNameSearch_TVD.Name = "textBoxNameSearch_TVD";
-            this.textBoxNameSearch_TVD.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNameSearch_TVD.TabIndex = 9;
-            this.textBoxNameSearch_TVD.TextChanged += new System.EventHandler(this.textBoxNameSearch_TVD_TextChanged);
+            this.labelMax_TVD.AutoSize = true;
+            this.labelMax_TVD.Location = new System.Drawing.Point(288, 45);
+            this.labelMax_TVD.Name = "labelMax_TVD";
+            this.labelMax_TVD.Size = new System.Drawing.Size(70, 13);
+            this.labelMax_TVD.TabIndex = 25;
+            this.labelMax_TVD.Text = "Макс-кол-во";
             // 
-            // labelNameSearch_TVD
+            // chartStats_TVD
             // 
-            this.labelNameSearch_TVD.AutoSize = true;
-            this.labelNameSearch_TVD.Location = new System.Drawing.Point(413, 32);
-            this.labelNameSearch_TVD.Name = "labelNameSearch_TVD";
-            this.labelNameSearch_TVD.Size = new System.Drawing.Size(140, 13);
-            this.labelNameSearch_TVD.TabIndex = 10;
-            this.labelNameSearch_TVD.Text = "Поиск поставщика в базе";
-            // 
-            // buttonStats_TVD
-            // 
-            this.buttonStats_TVD.Location = new System.Drawing.Point(559, 45);
-            this.buttonStats_TVD.Name = "buttonStats_TVD";
-            this.buttonStats_TVD.Size = new System.Drawing.Size(75, 23);
-            this.buttonStats_TVD.TabIndex = 11;
-            this.buttonStats_TVD.Text = "Статистика";
-            this.buttonStats_TVD.UseVisualStyleBackColor = true;
-            this.buttonStats_TVD.Click += new System.EventHandler(this.buttonStats_TVD_Click);
+            chartArea1.Name = "ChartArea1";
+            this.chartStats_TVD.ChartAreas.Add(chartArea1);
+            this.chartStats_TVD.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.chartStats_TVD.Legends.Add(legend1);
+            this.chartStats_TVD.Location = new System.Drawing.Point(511, 0);
+            this.chartStats_TVD.Name = "chartStats_TVD";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartStats_TVD.Series.Add(series1);
+            this.chartStats_TVD.Size = new System.Drawing.Size(595, 373);
+            this.chartStats_TVD.TabIndex = 1;
+            this.chartStats_TVD.Text = "chart1";
             // 
             // FormInstrument
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1106, 570);
+            this.ClientSize = new System.Drawing.Size(1106, 644);
             this.Controls.Add(this.panelRight_TVD);
             this.Controls.Add(this.panelLeft_TVD);
             this.Controls.Add(this.panel1);
             this.Name = "FormInstrument";
             this.Text = "Инструментальная панель";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panelLeft_TVD.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInPutData_TVD)).EndInit();
+            this.groupBoxStats_TVD.ResumeLayout(false);
+            this.groupBoxStats_TVD.PerformLayout();
             this.groupBoxDelete_TVD.ResumeLayout(false);
             this.groupBoxDelete_TVD.PerformLayout();
-            this.groupBoxAdd_TVD.ResumeLayout(false);
-            this.groupBoxAdd_TVD.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInfoMan_TVD)).EndInit();
-            this.panelRight_TVD.ResumeLayout(false);
-            this.groupBoxDeleteInfoMan_TVD.ResumeLayout(false);
-            this.groupBoxDeleteInfoMan_TVD.PerformLayout();
             this.groupBoxInfoMan_TVD.ResumeLayout(false);
             this.groupBoxInfoMan_TVD.PerformLayout();
+            this.groupBoxAdd_TVD.ResumeLayout(false);
+            this.groupBoxAdd_TVD.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInPutData_TVD)).EndInit();
+            this.panelRight_TVD.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartStats_TVD)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -548,7 +627,7 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonReturn_TVD;
         private System.Windows.Forms.Button buttonEditHeaders_TVD;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonDelete_TVD;
         private System.Windows.Forms.Button buttonHelp_TVD;
         private System.Windows.Forms.Button buttonSaveFile_TVD;
         private System.Windows.Forms.Button buttonOpenFile_TVD;
@@ -571,23 +650,31 @@ namespace Tyuiu.TarasovVD.Sprint7.Project.V5
         private System.Windows.Forms.GroupBox groupBoxDelete_TVD;
         private System.Windows.Forms.Label labelDeleteProduct_TVD;
         private System.Windows.Forms.TextBox textBoxDeleteProduct_TVD;
-        private System.Windows.Forms.DataGridView dataGridViewInfoMan_TVD;
-        private System.Windows.Forms.GroupBox groupBoxDeleteInfoMan_TVD;
         private System.Windows.Forms.GroupBox groupBoxInfoMan_TVD;
         private System.Windows.Forms.TextBox textBoxFIO_TVD;
         private System.Windows.Forms.TextBox textBoxDataProduct_TVD;
-        private System.Windows.Forms.TextBox textBoxCountProduct_TVD;
-        private System.Windows.Forms.Label labelCountProduct_TVD;
         private System.Windows.Forms.Label labelDataProduct_TVD;
         private System.Windows.Forms.Label labelFIO_TVD;
-        private System.Windows.Forms.Button buttonAddInfo_TVD;
-        private System.Windows.Forms.Button buttonDeleteInfoMan_TVD;
-        private System.Windows.Forms.TextBox textBoxDeleteInfoMan_TVD;
-        private System.Windows.Forms.Label labelDeleteInfoMan_TVD;
         private System.Windows.Forms.TextBox textBoxSearch_TVD;
-        private System.Windows.Forms.Label labelNameSearch_TVD;
-        private System.Windows.Forms.TextBox textBoxNameSearch_TVD;
         private System.Windows.Forms.Label labelSearch_TVD;
         private System.Windows.Forms.Button buttonStats_TVD;
+        private System.Windows.Forms.Label labelNumber_TVD;
+        private System.Windows.Forms.TextBox textBoxNumber_TVD;
+        private System.Windows.Forms.GroupBox groupBoxStats_TVD;
+        private System.Windows.Forms.Button buttonSortNumberProduct_TVD;
+        private System.Windows.Forms.TextBox textBoxSort_TVD;
+        private System.Windows.Forms.TextBox textBoxmin_TVD;
+        private System.Windows.Forms.TextBox textBoxMax_TVD;
+        private System.Windows.Forms.TextBox textBoxAverage_TVD;
+        private System.Windows.Forms.TextBox textBoxSum_TVD;
+        private System.Windows.Forms.TextBox textBoxCountP_TVD;
+        private System.Windows.Forms.Button buttonCalculateStats_TVD;
+        private System.Windows.Forms.Label labelMax_TVD;
+        private System.Windows.Forms.Label labelMin_TVD;
+        private System.Windows.Forms.Label labelaverage_TVD;
+        private System.Windows.Forms.Label labelSum_TVD;
+        private System.Windows.Forms.Label labelCountP_TVD;
+        private System.Windows.Forms.Label labelNumberColumns_TVD;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartStats_TVD;
     }
 }
